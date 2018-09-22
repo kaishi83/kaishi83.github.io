@@ -1,81 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<title>introduction</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    * {
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-        /* Style the header */
-    header {
-        background-color: #666;
-        padding: 30px;
-        text-align: center;
-        font-size: 35px;
-        color: white;
-    }
-
-    /* Create two columns/boxes that floats next to each other */
-    nav {
-        float: left;
-        width: 30%;
-        height: 300px; /* only for demonstration, should be removed */
-        background: #ccc;
-        padding: 20px;
-    }
-
-    /* Style the list inside the menu */
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    article {
-        float: left;
-        padding: 20px;
-        width: 70%;
-        background-color: #f1f1f1;
-        height: 300px; /* only for demonstration, should be removed */
-    }
-
-    /* Clear floats after the columns */
-    section:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    /* Style the footer */
-    footer {
-        background-color: #777;
-        padding: 10px;
-        text-align: center;
-        color: white;
-    }
-
-    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-    @media (max-width: 600px) {
-        nav, article {
-            width: 100%;
-            height: auto;
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
         }
-    }
-</style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 20%;
+            padding: 10%;
+            /* only for demonstration, should be removed */
+            background: rgb(255, 255, 255);
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: rgb(255, 255, 255);
+            height: 300px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        image{
+            float: left;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
 
 <body>
-    <h2>Kai Shi</h2>
-    <p>
-        I am a post-doc researcher in the <a href="http://research.microsoft.com/camsys/">System and Networking Group</a> at Microsoft Research Cambridge, UK. My research focus on sovling the physical layer challenges of designing an all optical switch for next generation data center. I love the multidisciplinary enviroment at Microsft. On one hand, I could contribute my previous reserach experience in photonic devices and optical communicaiton systems to the projects. On the other hand, I could gain a lot of knowlege from colleages who works on networking and application layers in the cloud. 
-    <p>
-        Before joining Microsoft Reserach, I worked as a Reserach Associate at the <a href="https://www.ee.ucl.ac.uk/ong">Opitcal Network Group</a> at univeristy colleage London, UK for the <a href="https://www.ee.ucl.ac.uk/ong/group-research/comimo">COMIMO</a> project (2012 - 2017). In this project I built a 10&times10 mode division multiplexing system over a 24km ring core fiber in collaboration with Univeristy of Southampton and University of Central Florida with digital signal processing algorithms that I developed to enable fast convergence rate and low complexity for the optical mulitple-input and multiple-ouput (MIMO) system. We manged to achieve a 1.12 terabit per second tranmission rate over an single optical fiber.
-    </p>
-        I obainted my PhD from Dublin City Univeristy, where I worked on optical burst switching using various fast wavelength tunable semicondutor lasers.
-    </p>
+    <section>
+        <nav>
+            <p><img src="profile.jpg" alt="profile_picture" , style="width:180px;height:180px;margin-right:15px;"></p>
+            <h2>Kai Shi</h2>
+            <h3>contact information:</h3>
+            <p>21 Station Road, Cambridge, UK</p>
+            <p>t-kashi@microsft</p>
+            <ul>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Publication</a></li>
+                <li><a href="#">projects</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <p>
+                I am a postdoc researcher in the <a href="http://research.microsoft.com/camsys/">System and Networking
+                    Group</a> at Microsoft Research Cambridge, UK. My research focus on sovling the physical layer
+                challenges of designing an all optical switch for next generation data center. I love the
+                multidisciplinary enviroment at Microsft. On one hand, I could contribute my previous reserach
+                experience in photonic devices and optical communicaiton systems to the projects. On the other hand, I
+                could gain a lot of knowlege from colleages who works on networking and application layers in the
+                cloud.
+                <p>
+                    Before joining Microsoft Reserach, I worked as a Reserach Associate at the <a href="https://www.ee.ucl.ac.uk/ong">Opitcal
+                        Network Group</a> at univeristy colleage London, UK for the <a href="https://www.ee.ucl.ac.uk/ong/group-research/comimo">COMIMO</a>
+                    project (2012 - 2017). In this project I built a 10&times10 mode division multiplexing system over
+                    a 24km ring core fiber in collaboration with Univeristy of Southampton and University of Central
+                    Florida with digital signal processing algorithms that I developed to enable fast convergence rate
+                    and low complexity for the optical mulitple-input and multiple-ouput (MIMO) system. We manged to
+                    achieve a 1.12 terabit per second tranmission rate over an single optical fiber.
+                </p>
+                I obainted my PhD from Dublin City Univeristy, Ireland, where I worked on optical burst switching using
+                various fast wavelength tunable semicondutor lasers.
+        </article>
+    </section>
+
 </body>
+
 </html>
